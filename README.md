@@ -33,3 +33,9 @@ Apresentar um relatório ao final dos testes contendo:
 Poderemos utilizar essa aplicação fazendo uma chamada via docker. Ex:
 
 `docker run <sua imagem docker> —url=http://google.com —requests=1000 —concurrency=10`
+
+### Instruções de uso
+
+Para realizar o teste de stress na url http://google.com.br, com um total de 10 requests, sendo 5 requests simultâneas, pode ser usado o comando abaixo:
+
+`docker run regismartiny/go-expert-desafio-stress-test:1.0 run -u http://google.com.br -c 5 -r 10`
