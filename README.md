@@ -14,11 +14,11 @@ Entrada de Parâmetros via CLI:
 - --concurrency: Número de chamadas simultâneas
 
 
-### Execução do Teste:
+#### Execução do Teste:
 
-Realizar requests HTTP para a URL especificada.
-Distribuir os requests de acordo com o nível de concorrência definido.
-Garantir que o número total de requests seja cumprido.
+- Realizar requests HTTP para a URL especificada.
+- Distribuir os requests de acordo com o nível de concorrência definido.
+- Garantir que o número total de requests seja cumprido.
 
 #### Geração de Relatório:
 
@@ -32,4 +32,4 @@ Apresentar um relatório ao final dos testes contendo:
 #### Execução da aplicação:
 Poderemos utilizar essa aplicação fazendo uma chamada via docker. Ex:
 
-docker run <sua imagem docker> —url=http://google.com —requests=1000 —concurrency=10
+`docker run <sua imagem docker> —url=http://google.com —requests=1000 —concurrency=10`
